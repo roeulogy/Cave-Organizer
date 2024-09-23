@@ -4,8 +4,21 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
+    height: 100%;
     font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -72,6 +85,7 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    flex: 1;
 }
 
 .container {
@@ -89,6 +103,12 @@ body {
     border-top: 2px solid black;
     padding: 10px;
     text-align: left;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.footer hr {
+    margin-bottom: 10px;
 }
 
 .footer p {
